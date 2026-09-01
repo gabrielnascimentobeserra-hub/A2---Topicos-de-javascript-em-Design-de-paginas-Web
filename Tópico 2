@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px 30px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 30px;
+
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      margin: 0 0 20px;
+      font-size: 48px;
+      line-height: 1.1;
+    }
+
+    .hero-text p {
+      margin: 0 0 30px;
+      color: #666;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-button:hover {
+      background: #005fc7;
+    }
+
+    .hero-image {
+      flex: 1;
+      height: 300px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #eaf3ff;
+      border-radius: 12px;
+
+      font-size: 22px;
+      color: #007bff;
+    }
+
+    /* CARDS */
+    .features {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 30px;
+    }
+
+    .features-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .features-title h2 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    .features-title p {
+      margin: 0;
+      color: #777;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+    }
+
+    .card {
+      flex: 1;
+      padding: 30px;
+
+      background: #f7f7f7;
+      border-radius: 10px;
+
+      text-align: center;
+    }
+
+    .card-icon {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 60px;
+      padding: 30px;
+      background: #222;
+      color: white;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 60px 25px;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 38px;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      NovaTech
+    </div>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Recursos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+        Simplifique seu trabalho.
+      </h1>
+
+      <p>
+        Uma plataforma criada para ajudar você a organizar
+        suas tarefas, projetos e ideias em um único lugar.
+      </p>
+
+      <a href="#" class="hero-button">
+        Começar agora
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+      Imagem / Ilustração
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="features-title">
+
+      <h2>
+        Por que escolher a NovaTech?
+      </h2>
+
+      <p>
+        Tudo o que você precisa para trabalhar melhor.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-icon">
+          ⚡
+        </div>
+
+        <h3>
+          Rápido
+        </h3>
+
+        <p>
+          Execute suas tarefas de maneira rápida,
+          simples e eficiente.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🔒
+        </div>
+
+        <h3>
+          Seguro
+        </h3>
+
+        <p>
+          Seus dados ficam protegidos com
+          tecnologia de segurança moderna.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🎯
+        </div>
+
+        <h3>
+          Organizado
+        </h3>
+
+        <p>
+          Tenha todas as suas informações
+          organizadas em um único lugar.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 NovaTech — Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+</body>
+</html>
