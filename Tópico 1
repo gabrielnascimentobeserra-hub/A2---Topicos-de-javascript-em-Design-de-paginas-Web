@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card de Perfil - CRAP</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f4f8;
+      font-family: Arial, sans-serif;
+    }
+
+    /* CARD */
+    .profile-card {
+      width: 360px;
+      padding: 28px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    /* PROXIMIDADE + ALINHAMENTO */
+    .profile-header {
+      margin-bottom: 20px;
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 14px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* CONTRASTE */
+    .profile-name {
+      margin: 0;
+      color: #1a1a1a;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .profile-job {
+      margin: 6px 0 0;
+      color: #777;
+      font-size: 15px;
+    }
+
+    /* PROXIMIDADE */
+    .profile-description {
+      margin: 18px 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* REPETIÇÃO */
+    .profile-info {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 0;
+      margin-bottom: 20px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info strong {
+      display: block;
+      color: #222;
+      font-size: 18px;
+    }
+
+    .info span {
+      color: #888;
+      font-size: 12px;
+    }
+
+    /* CONTRASTE + REPETIÇÃO */
+    .btn {
+      width: 100%;
+      padding: 11px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      margin-bottom: 8px;
+      background: #007bff;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #e9ecef;
+      color: #333;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card">
+
+    <div class="profile-header">
+
+      <img 
+        class="profile-image"
+        src="https://i.pravatar.cc/150?img=12"
+        alt="Foto de perfil"
+      >
+
+      <h1 class="profile-name">jorge Souza</h1>
+
+      <p class="profile-job">
+        Designer UI/UX
+      </p>
+
+    </div>
+
+    <p class="profile-description">
+      Designer apaixonado por criar interfaces simples,
+      bonitas e fáceis de usar.
+    </p>
+
+    <div class="profile-info">
+
+      <div class="info">
+        <strong>24</strong>
+        <span>Projetos</span>
+      </div>
+
+      <div class="info">
+        <strong>1.2K</strong>
+        <span>Seguidores</span>
+      </div>
+
+      <div class="info">
+        <strong>356</strong>
+        <span>Seguindo</span>
+      </div>
+
+    </div>
+
+    <button class="btn btn-primary">
+      Seguir
+    </button>
+
+    <button class="btn btn-secondary">
+      Enviar mensagem
+    </button>
+
+  </div>
+
+</body>
+</html>
